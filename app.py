@@ -21,7 +21,7 @@ def CollectData():
     R=float(request.form['R'])
     print(N,P,K,T,H,PH,R)
     result=model.predict([[N,P,K,T,H,PH,R]])
-    result(result[0])
+    return(result[0])
 
 if __name__=="__main__":
     app.run(debug=True)
